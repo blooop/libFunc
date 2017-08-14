@@ -8,7 +8,7 @@ import os
 import cPickle as pickle
 from libfunc import *
 
-#test
+#test2
 def loadImgAsGrayscale(path):
     img = cv2.imread(path)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)  # Converting to GrayScale
