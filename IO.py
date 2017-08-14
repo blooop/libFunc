@@ -2,9 +2,6 @@ import glob
 import time
 import os
 import cPickle as pickle
-import numpy as np
-import pandas as pd
-
 
 def saveToDisk(data, name):
     pickle.dump(data, open(name, "wb"))
