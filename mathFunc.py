@@ -10,3 +10,6 @@ def func3():
 
 def func4():
     print "func4"
+
+def a2v(angle):
+    return v(math.cos(angle), math.sin(angle))
