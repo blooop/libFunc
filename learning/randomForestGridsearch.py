@@ -1,5 +1,3 @@
-print(__doc__)
-
 import numpy as np
 
 from time import time
