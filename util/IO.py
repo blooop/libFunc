@@ -44,3 +44,14 @@ def getFileList(basePath, fileStart, numberOfFiles, extension):
     for i in filenumlist:
         fileList.append(basePath + str(i) + extension)
     return fileList
+
+def concatFiles(path,filenames,outputPath,readLinebyLine = False):
+    with open( os.path.join(path,outputPath), 'w') as outfile:
+        for fname in filenames:
+            fname = os.path.join(path,fname)
+            with open(fname) as infile:
+                if readLinebyLine :
+                    for line in infile:
+                        outfile.write(line)
+                else:
+                    outfile.write(infile.read())
