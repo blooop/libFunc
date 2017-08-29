@@ -36,7 +36,7 @@ def getFilesMatchingExtension(extensions):
                 file_paths.append(os.path.join(root, file))  # Add it to the list.
 
     return file_paths
-
+ 
 
 def getFileList(basePath, fileStart, numberOfFiles, extension):
     filenumlist = range(fileStart, fileStart + numberOfFiles)
