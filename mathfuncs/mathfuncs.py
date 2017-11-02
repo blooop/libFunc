@@ -22,7 +22,8 @@ def vecLen(vec):
     return math.sqrt(vec[0]*vec[0]+vec[1]*vec[1])
 
 def lerp(value, inputLow, inputHigh, outputLow, outputHigh):
-    return outputLow + ((value - inputLow) / (inputHigh - inputLow)) * (outputHigh - outputLow)
+    inputLow = float(inputLow)
+    return outputLow + ((float(value) - inputLow) / (float(inputHigh) - inputLow)) * (float(outputHigh) - outputLow)
 
 def rolling_window(array, window, step_size=1):
     shape = array.shape[:-1] + (array.shape[-1] - window + 1 - step_size, window)
