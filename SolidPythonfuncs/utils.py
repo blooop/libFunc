@@ -14,7 +14,7 @@ def renderSCAD(obj,fileName,segments = 50):
     # the detail of arcs by changing the SEGMENTS variable.  This can
     # be expensive when making lots of small curves, but is otherwise
     # useful.
-    scad_render_to_file(obj, fileName, file_header='$fn = %s;' % segments)
+    scad_render_to_file(obj, fileName, file_header='$fn = %s;' % segments,include_orig_code=True)
 
 if __name__ == '__main__':
     a = circle(5)
